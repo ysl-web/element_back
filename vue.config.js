@@ -1,3 +1,4 @@
 module.exports = {
-    pullicPath: './'
+    publicPath: './',
+    productionSourceMap: false
 }

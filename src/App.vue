@@ -15,8 +15,12 @@
                 <i class="el-icon-location"></i>
                 <span>数据核实</span>
               </template>
-              <el-menu-item index="1-1">任务分配</el-menu-item>
-              <el-menu-item index="1-2">任务统计</el-menu-item>
+              <el-menu-item index="1-1">
+                <router-link to="/">任务分配</router-link>
+              </el-menu-item>
+              <el-menu-item index="1-2">
+                <router-link to="/about">任务统计</router-link>
+              </el-menu-item>
             </el-submenu>
             <el-submenu index="2">
               <template slot="title">
@@ -60,7 +64,7 @@
     <router-view/>-->
     <Header></Header>
     <div class="content">
-      <Home></Home>
+      <router-view></router-view>
     </div>
   </div>
 </template>

@@ -59,14 +59,19 @@
     </div>
     <router-view/>-->
     <Header></Header>
+    <div class="content">
+      <Home></Home>
+    </div>
   </div>
 </template>
 
 <script>
 import Header from '@/components/common/Header.vue'
+import Home from '@/views/Home.vue'
 export default {
   components: {
-    Header
+    Header,
+    Home
   },
   data() {
     return {
@@ -98,39 +103,17 @@ export default {
     background: #fff;
     border-right: 1px solid #eee;
     box-sizing: border-box;
+    z-index: 999;
 
     .el-menu {
       border: none;
     }
   }
 
-  .header{
-    position: fixed;
-    top: 0;
-    left: 201px;
-    width: calc(100% - 201px);
-    background: #fff;
+  .content{
+    position: relative;
+    padding: 80px 20px 0 221px;
+    z-index: 1;
   }
 }
-
-/* #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-} */
 </style>

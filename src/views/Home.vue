@@ -3,7 +3,7 @@
     <div class="bor bor-hover">click me</div>
     <div class="bor gradient">click me</div>
     <div class="bor outline">click me</div>
-    <div>测试</div>
+    <div>测试合并</div>
   </div>
 </template>
 
